@@ -1,0 +1,36 @@
+class Persona:
+    def __init__(self, nombre, apellido, edad):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.edad = edad
+
+    def get_nombre(self):
+        return self.nombre
+
+    def set_nombre(self, nombre):
+        self.nombre = nombre
+
+    def get_apellido(self):
+        return self.apellido
+
+    def set_apellido(self, apellido):
+        self.apellido = apellido
+
+    def get_edad(self):
+        return self.edad
+
+    def set_edad(self, edad):
+        self.edad = edad
+
+# Ejemplo de uso
+persona = Persona("Juan", "Pérez", 30)
+
+print(f"Nombre: {persona.get_nombre()}")
+print(f"Apellido: {persona.get_apellido()}")
+print(f"Edad: {persona.get_edad()}")
+
+persona.set_nombre("María")
+persona.set_apellido("Gómez")
+
+print(f"Nombre: {persona.get_nombre()}")
+print(f"Apellido: {persona.get_apellido()}")
